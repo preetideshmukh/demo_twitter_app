@@ -1,0 +1,5 @@
+<h1> Profile page for <%= @user.username %></h1>
+<p> <%= @user.username %></p>
+<% @user.tweets.reverse.each do |tweet| %>
+	<p> <%= tweet.content %></p>
+<% end %>
